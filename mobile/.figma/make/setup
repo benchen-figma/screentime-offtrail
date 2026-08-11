@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+if ! command -v node &> /dev/null; then
+  brew install node
+fi
+if ! command -v watchman &> /dev/null; then
+  brew install watchman
+fi
+echo "System dependencies are ready."
