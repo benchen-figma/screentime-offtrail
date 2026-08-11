@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+pnpm run build
+exec figma make deploy-preview --build-dir dist
